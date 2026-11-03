@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ari's website! :p</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-
-    header {
-      background-color: #969696;
-      color: #3f5591;
-      padding: 20px;
-      text-align: center;
-    }
-
-    main {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #333;
-      color: #fff;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ari's website! :p</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #969696;
+            color: #3f5591;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px; /* Prevents footer from covering content */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 230px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <header>
+
+<header>
     <h1>Ari's website :D</h1>
-  </header>
-  <main>
+</header>
+
+<main>
     <h2>About me!</h2>
     <p>Hi! i'm currently a freshman at loyola chicago. I have two cats back at home and another cat here with me at loyola. I enjoy spending time with my roomate, learning new thing in my classes, and hanging out with friends!</p>
-  </main>
-  <footer>
+    
+    <!-- This section contains your images -->
+    <h2>My Photos 📸</h2>
+    <div class="gallery">
+        <img src="DSCN4061.JPG" alt="Ari's first photo">
+        <img src="IMG_5443.png" alt="Ari's second photo">
+        <img src="IMG_5472.png" alt="Ari's third photo">
+    </div>
+</main>
+
+<footer>
     <p>&copy; 2026 Ari's website! :p</p>
-  </footer>
+</footer>
+
 </body>
 </html>
